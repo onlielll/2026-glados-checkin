@@ -28,11 +28,9 @@ if sys.platform.startswith('win'):
 
 # ================= 配置 =================
 
-# 域名优先级：Cloud 第一
+# 与当前登录会话使用同一域名，避免把 Cookie 发送到其他站点。
 DOMAINS = [
-    "https://glados.cloud",
-    "https://glados.rocks", 
-    "https://glados.network",
+    "https://www.glados.vip",
 ]
 
 DEFAULT_USER_AGENT = (
